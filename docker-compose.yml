@@ -31,6 +31,8 @@ services:
       dockerfile: redis.dockerfile
     image: iamhello-redis
     container_name: redis
+    ports:
+      - 6379:6379
     hostname: redis
     restart: unless-stopped
     networks:
