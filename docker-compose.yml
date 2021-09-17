@@ -10,6 +10,10 @@ services:
     container_name: postgres
     restart: unless-stopped
     hostname: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: userdb
     volumes:
       - postgres-data:/var/lib/postgres/data
     networks:
@@ -33,6 +37,8 @@ services:
     container_name: redis
     ports:
       - 6379:6379
+    environment:
+        REDIS_PASSWORD: qwerty
     hostname: redis
     restart: unless-stopped
     networks:
