@@ -35,15 +35,14 @@ services:
       dockerfile: redis.dockerfile
     image: iamhello-redis
     container_name: redis
-    ports:
-      - 6379:6379
+    #ports:
+      #- 6379:6379
     environment:
         REDIS_PASSWORD: qwerty
     hostname: redis
     restart: unless-stopped
     networks:
       - app-network
-
 
   nestjs:
     build:

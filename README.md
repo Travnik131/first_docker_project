@@ -1,10 +1,8 @@
-# firts_docker_project
+# first_docker_project
 
 Hi! This project is part of the study of the docker stack for deploying applications in one of the well-known IT company.
 
 This repository is in the alpha release stage and is not intended for production
-
-
 
 Environments of docker-compose.yml:
 
